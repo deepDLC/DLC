@@ -52,6 +52,7 @@ public class gamePanel extends JPanel implements KeyListener{
 		switch(e.getKeyChar()){
 		case 'w':
 				movingUp = false;
+				
 		}
 	}
 	
