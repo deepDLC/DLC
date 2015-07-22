@@ -33,8 +33,7 @@ public class gamePanel extends JPanel implements KeyListener{
 		}
 	
 	
-		//Hello 
-		int chares = 0;
+		
 	
 	}
 
