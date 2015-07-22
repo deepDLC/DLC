@@ -34,10 +34,10 @@ public class gamePanel extends JPanel implements KeyListener{
 	public void run(){
 		
 		if(movingUp){
-			mainCharX += 5;
+			mainCharY += 5;
 		}
-		if(movingUp){
-			mainCharX += 5;
+		if(movingDown){
+			mainCharY += 5;
 		}
 		if(movingUp){
 			mainCharX += 5;
