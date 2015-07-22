@@ -26,7 +26,7 @@ public class gamePanel extends JPanel implements KeyListener{
 	public void run(){
 		
 		if(movingUp){
-			mainCharY += 5;
+			mainCharX += 5;
 		}
 	}
 
@@ -49,10 +49,7 @@ public class gamePanel extends JPanel implements KeyListener{
 	@Override
 	public void keyReleased(KeyEvent e) {
 		// TODO Auto-generated method stub
-		switch(e.getKeyChar()){
-		case 'w':
-				movingUp = false;
-		}
+		
 	}
 	
 }
