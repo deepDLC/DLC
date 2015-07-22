@@ -15,14 +15,14 @@ public class Game {
 		//JFrame Setup
 		JFrame myFrame = new JFrame();
 		myFrame.setVisible(true);
-		myFrame.setSize(640, 480);
+		myFrame.setSize(Constants.WIDTH, Constants.HEIGHT);
 		myFrame.setResizable(false);
 		myFrame.setTitle("DLC");
 		myFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 		//JPanel Setup
 		gamePanel myPanel = new gamePanel();
-		myPanel.setSize(640, 480);
+		myPanel.setSize(Constants.WIDTH, Constants.HEIGHT);
 		myPanel.setBackground(Color.WHITE);
 		myFrame.setContentPane(myPanel);
 		myPanel.requestFocus();
