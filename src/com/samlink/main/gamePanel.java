@@ -17,8 +17,10 @@ public class gamePanel extends JPanel implements KeyListener{
 	boolean movingLeft = false;
 	boolean movingRight = false;
 	
+	
 	//Enemy
 	int[] enemyX = new int [Constants.ENEMIES];
+	//Hello aosdifnasdf
 	
 	gamePanel(){
 		
