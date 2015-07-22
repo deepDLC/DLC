@@ -54,7 +54,7 @@ public class gamePanel extends JPanel implements KeyListener{
 			mainCharX -= 5;
 		}
 		
-	
+	//hi
 	}
 
 	@Override
