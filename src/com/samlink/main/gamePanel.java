@@ -17,7 +17,7 @@ public class gamePanel extends JPanel implements KeyListener{
 	
 	//Enemy
 	int[] enemyX = new int [Constants.ENEMIES];
-	//Hello aosdifnasdf
+	//Hello
 	
 	gamePanel(){
 		
