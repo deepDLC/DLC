@@ -27,7 +27,7 @@ public class Game {
 		myFrame.setContentPane(myPanel);
 		myPanel.requestFocus();
 		
-		//myPanel.addKeyListener(myPanel);
+		myPanel.addKeyListener(myPanel);
 		//myPanel.addMouseMotionListener(myPanel);
 		//myPanel.addMouseListener(myPanel);
 		
