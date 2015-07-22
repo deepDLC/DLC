@@ -10,8 +10,8 @@ import javax.swing.JPanel;
 public class gamePanel extends JPanel implements KeyListener{
 
 	//character variables
-	int mainCharX = 200;
-	int mainCharY = 200;
+	int mainCharX = Constants.WIDTH/2;
+	int mainCharY = Constants.HEIGHT/2;
 	boolean movingUp = false;
 	boolean movingDown = false;
 	boolean movingLeft = false;
@@ -33,16 +33,16 @@ public class gamePanel extends JPanel implements KeyListener{
 	
 	public void run(){
 		
-		if(movingUp){
+		if(movingUp && mainCharY >= 2){
+			mainCharY -= 5;
+		}
+		if(movingDown && mainCharY <= Constants.HEIGHT - 45){
 			mainCharY += 5;
 		}
-		if(movingDown){
-			mainCharY += 5;
-		}
-		if(movingRight){
+		if(movingRight && mainCharX <= Constants.WIDTH - 25){
 			mainCharX += 5;
 		}
-		if(movingLeft){
+		if(movingLeft && mainCharX >= 5){
 			mainCharX -= 5;
 		}
 		
@@ -54,7 +54,17 @@ public class gamePanel extends JPanel implements KeyListener{
 		// TODO Auto-generated method stub
 		switch(e.getKeyChar()){
 		case 'w':
-				movingUp = true;
+			movingUp = true;
+			break;
+		case 'a':
+			movingLeft= true;
+			break;
+		case 's':
+			movingDown = true;
+			break;
+		case 'd':
+			movingRight = true;
+			break;
 		}
 	}
 
@@ -70,8 +80,17 @@ public class gamePanel extends JPanel implements KeyListener{
 		// TODO Auto-generated method stub
 		switch(e.getKeyChar()){
 		case 'w':
-				movingUp = false;
-				
+			movingUp = false;
+			break;
+		case 'a':
+			movingLeft= false;
+			break;
+		case 's':
+			movingDown = false;
+			break;
+		case 'd':
+			movingRight = false;
+			break;
 		}
 	}
 	
