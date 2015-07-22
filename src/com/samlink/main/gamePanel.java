@@ -20,7 +20,7 @@ public class gamePanel extends JPanel implements KeyListener{
 	
 	boolean isSpawning = true;
 
-	Random r;
+	Random r = new Random();
 	
 	int gameState = 0;
 
@@ -30,18 +30,12 @@ public class gamePanel extends JPanel implements KeyListener{
 
 	// Hello
 
-	gamePanel() {
-
-	}
 
 	public void paintComponent(Graphics g) {
 		switch (gameState) {
 		case 0:
 			g.drawRect(mainCharX, mainCharY, 20, 20);
 			g.fillRect(mainCharX, mainCharY, 20, 20);
-			if(movingUp && mainCharY >= 2){
-				mainCharY -= 5;
-			}
 			break;
 		}
 	}
