@@ -13,6 +13,9 @@ public class gamePanel extends JPanel implements KeyListener{
 	int mainCharX = 200;
 	int mainCharY = 200;
 	boolean movingUp = false;
+	boolean movingDown = false;
+	boolean movingLeft = false;
+	boolean movingRight = false;
 	
 	//Enemy
 	int[] enemyX = new int [Constants.ENEMIES];
@@ -31,8 +34,15 @@ public class gamePanel extends JPanel implements KeyListener{
 		if(movingUp){
 			mainCharX += 5;
 		}
-	
-	
+		if(movingUp){
+			mainCharX += 5;
+		}
+		if(movingUp){
+			mainCharX += 5;
+		}
+		if(movingUp){
+			mainCharX += 5;
+		}
 		
 	
 	}
