@@ -3,7 +3,11 @@ package com.samlink.main;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
 
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 
@@ -17,18 +21,22 @@ public class gamePanel extends JPanel implements KeyListener{
 	boolean movingLeft = false;
 	boolean movingRight = false;
 	
+	BufferedImage itemBar;
 	
 	//Enemy
 	int[] enemyX = new int [Constants.ENEMIES];
-	//Hello
-	
-	gamePanel(){
 		
+	gamePanel() throws IOException{
+
+		URL url = getClass().getResource("itembar.png");
+		itemBar = ImageIO.read(url);
+
 	}
 	
 	public void paintComponent (Graphics g){
 		g.drawRect(mainCharX, mainCharY, 20, 20);
 		g.fillRect(mainCharX, mainCharY, 20, 20);
+		g.drawImage(itemBar, 0, 0, this);
 	}
 	
 	public void run(){

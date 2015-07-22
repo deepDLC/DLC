@@ -1,6 +1,7 @@
 package com.samlink.main;
 
 import java.awt.Color;
+import java.io.IOException;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -9,7 +10,7 @@ import javax.swing.WindowConstants;
 
 public class Game {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 
 		//JFrame Setup
